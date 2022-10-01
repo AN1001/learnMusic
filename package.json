@@ -2,5 +2,8 @@
 	"name": "music-learn",
 	"version": "1.0.0",
 	"description": "Create a online UI to teach music theory",
-	"author": "Arnav Nagpure"
+	"author": "Arnav Nagpure",
+	"scripts": {
+		"start": "node index.js"
+	}
  }
