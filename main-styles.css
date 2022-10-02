@@ -71,16 +71,21 @@ html, body{
 }
 
 #gradeDetails{
+	display: flex;
+	flex-direction: column;
+	
 	border: 1px solid var(--murky-blue);
 	margin: 20px 0 20px 0;
 	border-radius: 0.5em;
 	background: #202f36;
 	display: flex;
 	column-gap: 10px;
-	padding-left: 15px;
-	padding-top: 20px;
-	width: 350px;
+	width: 365px;
 	height: 505px;
+}
+
+#gradeBtns{
+	margin-left: 15px;
 }
 
 #mainArea{
@@ -98,4 +103,21 @@ html, body{
 
 @media only screen and (max-width: 799px){
 	#lessonArea{display: none;}
+}
+
+#miniNavTitle{
+	text-align: center;
+	border-bottom: 2px solid var(--soft-blue);
+	height: 110px;
+	margin-bottom: 15px;
+}
+
+#miniNavTitle>h2{
+	font-size: 2.2em;
+	margin: 12px 0 0 0;
+}
+
+#miniNavTitle>h4{
+	font-size: 1em;
+	margin: 0;
 }
