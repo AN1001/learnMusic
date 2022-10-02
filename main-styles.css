@@ -38,6 +38,8 @@ html, body{
 
 .gradeBtn {
 	margin: 7px 2px 5px 2px;
+	user-select: none;
+	-webkit-tap-highlight-color: transparent;
 	background: var(--murky-blue);
 	border-radius: 12px;
 	border: none;
