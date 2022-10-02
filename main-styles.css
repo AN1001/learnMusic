@@ -17,6 +17,7 @@ html, body{
 
 #homebar{
 	display: flex;
+	justify-content: center;
 	background: var(--soft-black);
 	border-bottom: 2px solid var(--murky-blue);
 	color: var(--soft-blue);
