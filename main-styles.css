@@ -67,5 +67,5 @@ html, body{
 
 
 .gradeBtn:active .front {
-transform: translateY(-2px);
+	transform: translateY(-2px);
 }
