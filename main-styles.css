@@ -23,7 +23,7 @@ html, body{
 }
 
 #logo{
-	background: url("https://github.com/AN1001/learnMusic/blob/main/logoPlaceholder.png?raw=true");
+	background: url(TempusPerfectum.png);
 	background-size: 160px; 
 	background-position: center 115px;
 	border-radius: 0.5em;
