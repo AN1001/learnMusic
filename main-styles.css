@@ -1,0 +1,11 @@
+@import url(//db.onlinewebfonts.com/c/ab596f21664c5582567537d241e2a53e?family=DINNextRoundedLTW01-Regular);
+:root{
+	--soft-white: #aaa;
+	--soft-black: #141f23;
+  --blue-grey: #202f36
+  --soft-blue: #84d7fe;
+}
+
+html, body{
+	background-color: var(--soft-black);
+}
