@@ -51,6 +51,7 @@ html, body{
 .front {
 	display: block;
 	padding: 12px 42px;
+	user-select: none;
 	border-radius: 12px;
 	border: 2px solid var(--soft-blue);
 	font-size: 1.25rem;
