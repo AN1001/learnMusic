@@ -100,6 +100,7 @@ html, body{
 	background: #202f36;
 	margin: 20px 0 20px 20px;
 	width: calc(100% - 425px);
+	height: 1000px;
 }
 
 @media only screen and (max-width: 799px){
@@ -121,4 +122,14 @@ html, body{
 #miniNavTitle>h4{
 	font-size: 1em;
 	margin: 0;
+}
+
+#pianoFooter{
+	margin-top: auto;
+	height: 40px;
+	background: url("https://github.com/AN1001/learnMusic/blob/main/pianoFooter1.png?raw=true");
+	opacity: 10%;
+	background-size: 200px;
+	background-repeat: repeat-x round;
+	background-position: center;
 }
