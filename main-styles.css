@@ -23,8 +23,8 @@ html, body{
 }
 
 #logo{
-	background: url(TempusPerfectum.png);
-	background-size: 160px; 
+	background: url(TempusPerfectumLogo.png);
+	background-size: 50px; 
 	background-position: center 115px;
 	border-radius: 0.5em;
 	height: 55px;
