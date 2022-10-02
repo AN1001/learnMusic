@@ -70,6 +70,7 @@ html, body{
 
 .gradeBtn:active .front {
 	transform: translateY(-2px);
+	border-color: #89e219;
 }
 
 #gradeDetails{
