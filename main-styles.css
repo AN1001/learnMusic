@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap');
 :root{
-	--soft-white: #aaa;
+	--soft-white: #f1f6fb;
 	--soft-black: #141f23;
 	--blue-grey: #202f36;
 	--soft-blue: #84d7fe;
@@ -8,4 +8,6 @@
 
 html, body{
 	background-color: var(--soft-black);
+	color: var(--soft-white);
+	font-family: 'M PLUS Rounded 1c', sans-serif;
 }
