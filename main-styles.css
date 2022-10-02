@@ -82,3 +82,9 @@ html, body{
 	width: 350px;
 	height: 505px;
 }
+
+@media only screen and (max-width: 900px){
+	body {
+    background-color: lightblue;
+  }
+}
