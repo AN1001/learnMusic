@@ -24,13 +24,13 @@ html, body{
 }
 
 #logo{
-	background: url(TempusPerfectumLogo.png);
+	background: url("https://github.com/AN1001/learnMusic/blob/main/TempusPerfectumLogo.png?raw=true");
 	background-size: 50px; 
 	background-position: center 115px;
 	border-radius: 0.5em;
 	height: 55px;
-	width: 60px;
-	margin: 8px 0 8px 8px;
+	width: 50px;
+	margin: 8px 0 8px 0;
 }
 
 #title{
