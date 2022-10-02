@@ -4,10 +4,32 @@
 	--soft-black: #141f23;
 	--blue-grey: #202f36;
 	--soft-blue: #84d7fe;
+	--murky-blue: #52656d;
 }
 
 html, body{
 	background-color: var(--soft-black);
 	color: var(--soft-white);
 	font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+#homebar{
+	display: flex;
+	background: var(--soft-black);
+	border-bottom: 2px solid var(--murky-blue);
+	color: var(--soft-blue);
+}
+
+#logo{
+	background: url("https://github.com/AN1001/learnMusic/blob/main/logoPlaceholder.png?raw=true");
+	background-size: 160px; 
+	background-position: center 115px;
+	border-radius: 0.5em;
+	height: 55px;
+	width: 60px;
+	margin: 8px;
+}
+
+#title{
+	font-size: 3em;
 }
