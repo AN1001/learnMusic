@@ -81,7 +81,7 @@ html, body{
 	display: flex;
 	column-gap: 10px;
 	width: 365px;
-	min-height: 425px;
+	min-height: 625px;
 	height: auto;
 }
 
