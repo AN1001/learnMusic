@@ -126,7 +126,7 @@ html, body{
 #pianoFooter{
 	margin-top: auto;
 	height: 40px;
-	background: url("https://github.com/AN1001/learnMusic/blob/main/pianoFooter1.png?raw=true");
+	background: url(pianoFooter1.png);
 	opacity: 10%;
 	background-size: 200px;
 	background-repeat: repeat-x round;
