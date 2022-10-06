@@ -12,6 +12,9 @@ let buttons = document.getElementById("gradeDetails");
 
 const gradeFlowChart = document.getElementById("gradeFlowChart");
 const gradeBtnsHolder = document.getElementById("gradeBtns");
+const mnTitle = document.getElementById("mnTitle");
+const mnSub = document.getElementById("mnSub");
+
 const temp = document.getElementById("lessonSelectUI");
 buttons.addEventListener("click",function(e){
     target = e.target.parentElement;
@@ -23,6 +26,9 @@ buttons.addEventListener("click",function(e){
             bar.querySelector('.lessonCode').textContent = key;
             bar.querySelector('.lessonDesc').firstChild.textContent = lessonObj[key];
         })
+        mnTitle.textContent = "Lessons";
+        mnSub.textContent = "Grade "+target.id+" all lessons";
+        
         gradeFlowChart.style.display = "block";
         gradeBtnsHolder.style.display = "none";
         gradeFlowChart.appendChild(bar);
