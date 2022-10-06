@@ -152,6 +152,11 @@ html, body{
 	margin: 5px 10px 0 10px;
 }
 
+.lessonSelectData:hover{
+	color: #89e219;
+	cursor: pointer;
+}
+
 .lessonCode{
 	font-size: 1.7em;
 	padding: 8px 8px 0 10px;
@@ -165,9 +170,11 @@ html, body{
 	width: 100%;
 	vertical-align: bottom;
 	padding-left: 10px;
+	color: var(--soft-white);
 }
 
 .lessonDesc>span{
 	display: inline-block;
 	vertical-align: middle;
 }
+
