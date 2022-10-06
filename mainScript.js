@@ -21,7 +21,7 @@ buttons.addEventListener("click",function(e){
         Object.keys(lessonObj).forEach((key) => {
             bar = temp.content.cloneNode(true);
             bar.querySelector('.lessonCode').textContent = key;
-            bar.querySelector('.lessonDesc').textContent = lessonObj[key];
+            bar.querySelector('.lessonDesc').firstChild.textContent = lessonObj[key];
         })
         gradeFlowChart.style.display = "block";
         gradeBtnsHolder.style.display = "none";
