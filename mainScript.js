@@ -2,10 +2,10 @@ var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
        // Typical action to be performed when the document is ready:
-       document.getElementById("lessonArea").innerHTML = xhttp.responseText;
+       var lessonInfo = JSON.parse(xhttp.responseText);
     }
 };
-let lessonInfo = xhttp.open("GET", "LESSONINFO.json", true);
+xhttp.open("GET", "LESSONINFO.json", true);
 console.log(lessonInfo);
 xhttp.send();
 let buttons = document.getElementById("gradeDetails");
