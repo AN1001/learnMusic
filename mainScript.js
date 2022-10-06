@@ -25,12 +25,11 @@ buttons.addEventListener("click",function(e){
             bar = temp.content.cloneNode(true);
             bar.querySelector('.lessonCode').textContent = key;
             bar.querySelector('.lessonDesc').firstChild.textContent = lessonObj[key];
+            gradeFlowChart.appendChild(bar);
         })
         mnTitle.textContent = "Lessons";
         mnSub.textContent = "Grade "+target.id+" all lessons";
-        
         gradeFlowChart.style.display = "block";
         gradeBtnsHolder.style.display = "none";
-        gradeFlowChart.appendChild(bar);
     }
 });
