@@ -141,3 +141,31 @@ html, body{
 	background-repeat: repeat-x round;
 	background-position: center;
 }
+
+.lessonSelectData{
+	display: flex;
+	height: 55px;
+	color: var(--soft-white);
+	background: var(--soft-black);
+	border: 1px solid #3f85a6;
+	border-radius: 0.5em;
+	margin: 5px 10px 0 10px;
+}
+
+.lessonCode{
+	font-size: 1.7em;
+	padding: 6.5px 8px 0 10px;
+	border-right: 2px dashed #3f85a6;
+}
+
+.lessonDesc{
+	width: 100%;
+	text-align: center;
+	vertical-align: bottom;
+	background: blue;
+}
+
+.lessonDesc>span{
+	display: inline-block;
+	vertical-align: middle;
+}
