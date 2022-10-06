@@ -11,7 +11,7 @@ xhttp.send();
 let buttons = document.getElementById("gradeDetails");
 
 buttons.addEventListener("click",function(e){
-    target = e.target;
+    target = e.target.parentElement
     if(!isNaN(target.id)){
         console.log(lessonInfo[target.id]);
     }
