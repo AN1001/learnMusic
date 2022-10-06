@@ -18,7 +18,7 @@ buttons.addEventListener("click",function(e){
     if(!isNaN(target.id)){
         let lessonObj = lessonInfo[target.id];
         let bar;
-        lessonObj.forEach((key) => {
+        Object.keys(lessonObj).forEach((key) => {
             bar = temp.content.cloneNode(true);
             bar.querySelector('.lessonCode').textContent = key;
             bar.querySelector('.lessonDesc').textContent = lessonObj[key];
