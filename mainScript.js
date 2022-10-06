@@ -5,5 +5,14 @@ xhttp.onreadystatechange = function() {
        document.getElementById("lessonArea").innerHTML = xhttp.responseText;
     }
 };
-xhttp.open("GET", "testText.txt", true);
+let lessonInfo = xhttp.open("GET", "LESSONINFO.json", true);
+console.log(lessonInfo);
 xhttp.send();
+let buttons = document.getElementById("gradeDetails");
+
+buttons.addEventListener("click",function(e){
+    target = e.target;
+    if(!isNaN(target.id)){
+        console.log(lessonInfo[target.id])
+    }
+});
