@@ -10,9 +10,21 @@ xhttp.open("GET", "LESSONINFO.json", true);
 xhttp.send();
 let buttons = document.getElementById("gradeDetails");
 
+const gradeFlowChart = document.getElementById("gradeFlowChart");
+const gradeBtnsHolder = document.getElementById("gradeBtns");
+const temp = document.getElementById("lessonSelectUI");
 buttons.addEventListener("click",function(e){
-    target = e.target.parentElement
+    target = e.target.parentElement;
     if(!isNaN(target.id)){
-        console.log(lessonInfo[target.id]);
+        let lessonObj = lessonInfo[target.id];
+        let bar;
+        lessonObj.forEach((key) => {
+            bar = temp.content.cloneNode(true);
+            bar.querySelector('.lessonCode').textContent = key;
+            bar.querySelector('.lessonDesc').textContent = lessonObj[key];
+        })
+        gradeFlowChart.style.display = "block";
+        gradeBtnsHolder.style.display = "none";
+        gradeFlowChart.appendChild(bar);
     }
 });
