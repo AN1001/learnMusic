@@ -159,10 +159,12 @@ html, body{
 }
 
 .lessonDesc{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
-	text-align: center;
 	vertical-align: bottom;
-	background: blue;
+	padding-left: 10px;
 }
 
 .lessonDesc>span{
