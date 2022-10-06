@@ -37,7 +37,7 @@ html, body{
 	font-size: 3em;
 }
 
-.gradeBtn {
+.gradeBtn{
 	margin: 7px 2px 5px 2px;
 	user-select: none;
 	-webkit-tap-highlight-color: transparent;
@@ -47,6 +47,12 @@ html, body{
 	padding: 0;
 	cursor: pointer;
 	outline-offset: 2px;
+}
+
+.noSelect {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none;
+	user-select: none; 
 }
 
 .front {
