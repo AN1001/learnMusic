@@ -38,10 +38,8 @@ const backBtn = document.getElementById("backBtn");
 backBtn.addEventListener("click",function(){
     gradeFlowChart.style.display = "none";
     gradeBtnsHolder.style.display = "block";
-    let infoBars = gradeFlowChart.children;
-	for (let infoBar of infoBars) {
-		if(!(infoBar.id=="backBtn")){
-			infoBar.remove();
+		while(gradeFlowChart.lastChild && gradeFlowChart.lastChild.id!="backBtn") {
+			gradeFlowChart.lastChild.remove();
 		}
 	}
 })
