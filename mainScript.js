@@ -40,8 +40,8 @@ backBtn.addEventListener("click",function(){
     gradeBtnsHolder.style.display = "block";
     let infoBars = gradeFlowChart.children;
 	for (let infoBar of infoBars) {
-		if(!infoBar.id=="backBtn"){
+		if(!(infoBar.id=="backBtn")){
 			infoBar.remove();
-        }
+		}
 	}
 })
