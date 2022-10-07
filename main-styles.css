@@ -187,12 +187,12 @@ html, body{
 #backBtn{
 	position: absolute;
 	margin-top: -110px;
-	margin-left: 10px;
+	margin-left: 15px;
 	width: 30px;
 	height: 30px;
 	background-position: center;
 	background: url("cross.png");
-	opacity: 70%;
+	opacity: 15%;
 	border: none;
 	background-size: 30px;
 }
