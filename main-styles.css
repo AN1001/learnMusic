@@ -113,6 +113,10 @@ html, body{
 
 @media only screen and (max-width: 799px){
 	#lessonArea{display: none;}
+	.gradeBtn:hover .front {
+		transform: translateY(-2px);
+		border-color: #89e219;
+	}
 }
 
 #miniNavTitle{
