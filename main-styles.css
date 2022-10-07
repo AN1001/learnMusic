@@ -169,7 +169,8 @@ html, body{
 	align-items: center;
 	width: 100%;
 	vertical-align: bottom;
-	padding-left: 10px;
+	padding-right: 20px;
+	margin-left: 10px;
 	color: var(--soft-white);
 }
 
