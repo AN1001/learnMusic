@@ -18,7 +18,7 @@ const mnSub = document.getElementById("mnSub");
 const temp = document.getElementById("lessonSelectUI");
 buttons.addEventListener("click",function(e){
     target = e.target.parentElement;
-    if(!isNaN(target.id)){
+    if(!isNaN(target.id) && !target.id==""){
         let lessonObj = lessonInfo[target.id];
         let bar;
         Object.keys(lessonObj).forEach((key) => {
