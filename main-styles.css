@@ -96,6 +96,7 @@ html, body{
 
 #gradeBtns{
 	margin-left: 15px;
+	animation: fadeIn 1.5s;
 }
 
 #mainArea{
@@ -120,6 +121,7 @@ html, body{
 	border-bottom: 2px solid var(--soft-blue);
 	height: 105px;
 	margin-bottom: 15px;
+	animation: fadeIn 1.5s;
 }
 
 #miniNavTitle>h2{
@@ -141,6 +143,8 @@ html, body{
 	background-repeat: repeat-x round;
 	background-position: center;
 }
+
+#gradeFlowChart{animation: fadeIn 1.5s;}
 
 .lessonSelectData{
 	display: flex;
@@ -180,3 +184,8 @@ html, body{
 	vertical-align: middle;
 }
 
+/* Animations */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
