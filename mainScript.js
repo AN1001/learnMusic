@@ -33,3 +33,9 @@ buttons.addEventListener("click",function(e){
         gradeBtnsHolder.style.display = "none";
     }
 });
+
+const backBtn = document.getElementById("backBtn");
+backBtn.addEventListener("click",function(){
+    gradeFlowChart.style.display = "none";
+    gradeBtnsHolder.style.display = "block";
+})
