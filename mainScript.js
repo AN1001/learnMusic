@@ -8,7 +8,12 @@ xhttp.onreadystatechange = function() {
 };
 xhttp.open("GET", "LESSONINFO.json", true);
 xhttp.send();
-let buttons = document.getElementById("gradeDetails");
+const buttons = document.getElementById("gradeDetails");
+const mainArea = document.getElementById("lessonArea");
+
+if(window.innerWidth <= 800){
+	mainArea.style.display = "none";
+}
 
 const gradeFlowChart = document.getElementById("gradeFlowChart");
 const gradeBtnsHolder = document.getElementById("gradeBtns");
@@ -65,7 +70,6 @@ gradeFlowChart.addEventListener("click",function(e){
 
 function updateLesson(txt){
 	const embellishment = document.getElementById("embellishment").content.cloneNode(true);
-	const mainArea = document.getElementById("lessonArea");
 	let layoutData = JSON.parse(txt);
 	
 	if(window.innerWidth <= 850){
