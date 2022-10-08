@@ -11,6 +11,10 @@ xhttp.send();
 const buttons = document.getElementById("gradeDetails");
 const mainArea = document.getElementById("lessonArea");
 
+if(window.innerWidth <= 850){
+	mainArea.style.display = "block";
+}
+
 const gradeFlowChart = document.getElementById("gradeFlowChart");
 const gradeBtnsHolder = document.getElementById("gradeBtns");
 const mnTitle = document.getElementById("mnTitle");
