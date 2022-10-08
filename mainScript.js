@@ -42,3 +42,11 @@ backBtn.addEventListener("click",function(){
 		gradeFlowChart.lastChild.remove();
 	}
 })
+
+gradeFlowChart.addEventListener("click",function(e){
+    target = e.target.parentElement;
+	if(target.classList.contains("lessonSelectData")){
+		conosole.log(target.firstChild.textContent)
+		console.log("clicked")
+	}
+});
