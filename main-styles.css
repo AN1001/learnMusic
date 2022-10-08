@@ -115,6 +115,7 @@ html {
 }
 
 #lessonArea{
+	display: none;
 	border: 1px solid var(--murky-blue);
 	border-radius: 0.5em;
 	background: #202f36;
