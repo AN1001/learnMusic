@@ -46,11 +46,11 @@ backBtn.addEventListener("click",function(){
 gradeFlowChart.addEventListener("click",function(e){
     target = e.target.parentElement;
 	if(target.classList.contains("lessonSelectData")){
-		console.log(target.firstChild.textContent);
+		console.log(target.childNodes[1].textContent);
 		console.log("clicked");
 	}else if(target.parentElement.classList.contains("lessonSelectData")){
 		target = target.parentElement;
-		console.log(target.firstChild.textContent);
+		console.log(target.childNodes[1].textContent);
 		console.log("clicked2");
 	}
 });
