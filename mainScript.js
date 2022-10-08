@@ -66,6 +66,11 @@ gradeFlowChart.addEventListener("click",function(e){
 function updateLesson(txt){
 	const mainArea = document.getElementById("lessonArea");
 	let layoutData = JSON.parse(txt);
+	
+	while(mainArea.lastChild) {
+		mainArea.lastChild.remove();
+	}
+	
 	for (const i in layoutData) {
 		const el = eval(layoutData[i]);
 		if(el[0] == 'title'){
