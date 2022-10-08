@@ -70,7 +70,7 @@ function updateLesson(txt){
 		const el = eval(layoutData[i]);
 		if(el[0] == 'title'){
 			let titleEl = document.getElementById("titleTemp").content.cloneNode(true);
-			titleEl.querySelector(#titleEl).textContent = el[1];
+			titleEl.firstChild.textContent = el[1];
 			mainArea.appendChild(titleEl);
 		}
 	}
