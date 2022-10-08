@@ -24,7 +24,7 @@ html, body{
 }
 
 #logo{
-	background: url(TempusPerfectumLogo.png);
+	background: url(TempusLogo.png);
 	background-size: 50px; 
 	background-position: center 115px;
 	border-radius: 0.5em;
@@ -215,7 +215,7 @@ html, body{
 }
 
 #eLogo{
-	background: url(TempusPerfectumLogo.png);
+	background: url(TempusLogo.png);
 	background-size: 80px;
 	margin: auto;
 	width: 85px;
