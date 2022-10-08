@@ -228,6 +228,33 @@ html, body{
 	color: #1db0f5;
 }
 
+#imgCaption{
+	display: flex;
+	margin: 15px 65px 15px 65px;
+}
+
+#pictureEl{
+	width: 115px;
+	height: 100px;
+	padding: 5px;
+	border: 2px solid var(--soft-blue);
+	border-radius: 1em;
+	background: #3f85a6;
+}
+
+#infoEl{
+	margin-left: 10px;
+	margin-right: 10px;
+	height: 90px;
+	color: var(--soft-blue);
+	font-size: 0.9em;
+	border: 2px solid #3f85a6;
+	padding: 10px;
+	padding-left: 17px;
+	border-radius: 1em;
+	background: var(--soft-black);
+}
+
 #titleEl{
 	font-size: 2em;
 	margin: 0 0 0 10px;
