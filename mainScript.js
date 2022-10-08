@@ -11,7 +11,7 @@ xhttp.send();
 const buttons = document.getElementById("gradeDetails");
 const mainArea = document.getElementById("lessonArea");
 
-if(window.innerWidth <= 850){
+if(window.innerWidth >= 850){
 	mainArea.style.display = "block";
 }
 
