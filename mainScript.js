@@ -65,5 +65,10 @@ gradeFlowChart.addEventListener("click",function(e){
 
 function updateLesson(txt){
 	let layoutData = JSON.parse(txt);
-	console.log(JSON.parse(txt));
+	for (const i in layoutData) {
+		const el = eval(layoutData[i]);
+		if(el[0] == 'title'){
+			console.log('title ',el[1]);
+		}
+	}
 }
