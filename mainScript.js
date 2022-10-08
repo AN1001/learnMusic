@@ -72,8 +72,8 @@ function updateLesson(txt){
 		mainArea.lastChild.remove();
 	}
 	
-	embellishment.childNodes[1].textContent = eval(layoutData[0])[0];
-	embellishment.childNodes[3].textContent = eval(layoutData[0])[1];
+	embellishment.childNodes[3].textContent = eval(layoutData[0])[0];
+	embellishment.childNodes[5].textContent = eval(layoutData[0])[1];
 	mainArea.appendChild(embellishment);
 	
 	for (const i in layoutData) {
