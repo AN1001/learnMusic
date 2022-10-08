@@ -112,6 +112,16 @@ html, body{
 	width: calc(100% - 425px);
 }
 
+#loadLessonPicture{
+	background: url("https://cdn.iconscout.com/icon/free/png-256/check-circle-3601576-3003146.png");
+	background-size: 100px;
+	margin: auto;
+	margin-top: 250px;
+	opacity: 50%;
+	height: 100px;
+	width: 100px;
+}
+
 @media only screen and (max-width: 799px){
 	#lessonArea{display: none;}
 }
