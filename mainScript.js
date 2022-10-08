@@ -45,12 +45,21 @@ backBtn.addEventListener("click",function(){
 
 gradeFlowChart.addEventListener("click",function(e){
     target = e.target.parentElement;
-	if(target.classList.contains("lessonSelectData")){
+	if(target.classList.contains("lessonSelectData") || target.parentElement.classList.contains("lessonSelectData")){
+		if(target.parentElement.classList.contains("lessonSelectData")){
+			target = target.parentElement;
+		}
 		console.log(target.childNodes[1].textContent);
 		console.log("clicked");
-	}else if(target.parentElement.classList.contains("lessonSelectData")){
-		target = target.parentElement;
-		console.log(target.childNodes[1].textContent);
-		console.log("clicked2");
+		var req = new XMLHttpRequest();
+		var lessonData;
+		req.onreadystatechange = function() {
+			if (this.readyState == 4 && this.status == 200) {
+				lessonData = JSON.parse(req.responseText);
+				console.log(lessonData);
+			}
+		};
+		req.open("GET", "rawLessonData/G1L0.txt", true);
+		req.send();
 	}
 });
