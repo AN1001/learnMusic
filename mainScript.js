@@ -92,8 +92,9 @@ function updateLesson(txt){
 			mainArea.appendChild(textEl);
 		} else if(el[0] == 'icaption'){
 			let captionEl = document.querySelectorAll(".iCaption")[0].content.cloneNode(true);
-			captionEl.childNodes[3].src = el[1][0];
-			captionEl.childNodes[6].textContent = el[1][1];
+			let caption = captionEl.childNodes[1]
+			caption.childNodes[1].src = el[1][0];
+			caption.childNodes[3].textContent = el[1][1];
 			mainArea.appendChild(captionEl);
 		}
 	}
