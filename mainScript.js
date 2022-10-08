@@ -68,6 +68,11 @@ function updateLesson(txt){
 	const mainArea = document.getElementById("lessonArea");
 	let layoutData = JSON.parse(txt);
 	
+	if(window.innerWidth <= 850){
+		buttons.style.display = "none";
+		mainArea.style.display = "block";
+	}
+	
 	while(mainArea.lastChild) {
 		mainArea.lastChild.remove();
 	}
