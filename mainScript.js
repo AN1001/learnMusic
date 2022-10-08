@@ -49,16 +49,20 @@ gradeFlowChart.addEventListener("click",function(e){
 		if(target.parentElement.classList.contains("lessonSelectData")){
 			target = target.parentElement;
 		}
-		let code = target.childNodes[1].textContent.replace(":","")
+		let code = target.childNodes[1].textContent.replace(":","");
 		let req = new XMLHttpRequest();
 		let lessonData;
 		req.onreadystatechange = function() {
 			if (this.readyState == 4 && this.status == 200) {
 				lessonData = req.responseText;
-				console.log(lessonData);
+				updateLesson(lessonData);
 			}
 		};
 		req.open("GET", "rawLessonData/"+code+".txt", true);
 		req.send();
 	}
 });
+
+function updateLesson(txt){
+	console.log(txt)
+}
