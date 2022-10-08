@@ -197,6 +197,23 @@ html, body{
 	background-size: 30px;
 }
 
+#lineEl{
+	border-top: 2px solid var(--soft-blue);
+	margin-top: 10px;
+	padding: 10px;
+	color: #1db0f5;
+}
+
+#titleEl{
+	font-size: 2em;
+	margin: 0 0 0 10px;
+}
+
+#textEl{
+	margin: 10px;
+	margin-top: 5px;
+}
+
 /* Animations */
 @keyframes fadeIn {
   0% { opacity: 0; }
