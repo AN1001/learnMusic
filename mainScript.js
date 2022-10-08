@@ -58,11 +58,12 @@ gradeFlowChart.addEventListener("click",function(e){
 				updateLesson(lessonData);
 			}
 		};
-		req.open("GET", "rawLessonData/"+code+".txt", true);
+		req.open("GET", "rawLessonData/"+code+".json", true);
 		req.send();
 	}
 });
 
 function updateLesson(txt){
-	console.log(txt)
+	let layoutData = JSON.parse(txt);
+	console.log(JSON.parse(txt));
 }
