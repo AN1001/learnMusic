@@ -230,7 +230,8 @@ html, body{
 
 #imgCaption{
 	display: flex;
-	margin: 15px 65px 15px 65px;
+	margin: 15px auto 15px auto;
+	width: 400px;
 }
 
 #pictureEl{
