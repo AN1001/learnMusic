@@ -75,7 +75,7 @@ function updateLesson(txt){
 	embellishment.childNodes[3].textContent = eval(layoutData[0])[0];
 	embellishment.childNodes[5].textContent = eval(layoutData[0])[1];
 	mainArea.appendChild(embellishment);
-	
+
 	for (const i in layoutData) {
 		const el = eval(layoutData[i]);
 		if(el[0] == 'title'){
@@ -90,6 +90,11 @@ function updateLesson(txt){
 			let textEl = document.querySelectorAll(".textTemp")[0].content.cloneNode(true);
 			textEl.childNodes[1].textContent = el[1];
 			mainArea.appendChild(textEl);
+		} else if(el[0] == 'icaption'){
+			let captionEl = document.querySelectorAll(".iCaption")[0].content.cloneNode(true);
+			captionEl.childNodes[3].src = el[1][0];
+			captionEl.childNodes[6].textContent = el[1][1];
+			mainArea.appendChild(captionEl);
 		}
 	}
 }
