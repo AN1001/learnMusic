@@ -146,10 +146,6 @@ html {
 	margin: 0;
 }
 
-@media only screen and (max-width: 799px){
-	#lessonArea{display: none;}
-}
-
 #miniNavTitle{
 	text-align: center;
 	border-bottom: 2px solid var(--soft-blue);
