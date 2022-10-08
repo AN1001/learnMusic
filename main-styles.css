@@ -11,8 +11,18 @@ html, body{
 	background-color: var(--soft-black);
 	color: var(--soft-white);
 	font-family: 'M PLUS Rounded 1c', sans-serif;
+	overflow-x:hidden;
 	margin: 0;
 	padding: 0;
+}
+
+html::-webkit-scrollbar {
+	display: none;
+}
+
+html {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
 }
 
 #homebar{
@@ -245,7 +255,6 @@ html, body{
 
 #infoEl{
 	margin-left: 10px;
-	margin-right: 10px;
 	height: 90px;
 	color: var(--soft-blue);
 	font-size: 0.9em;
@@ -281,6 +290,31 @@ html, body{
 
 #eDesc{
 	text-align: center;
+}
+
+@media only screen and (max-width: 850px){
+	#lessonArea{
+		width: 100%;
+		margin: 0;
+		border-radius: 0;
+		transform: scale(100%);
+	}
+	#imgCaption{
+		transform: scale(90%);
+	}
+	#mainArea{
+		width: 100%;
+	}
+	
+	#homebar{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 399px){
+	#imgCaption{
+		margin-left: calc(50% - 200px);
+	}
 }
 
 /* Animations */
