@@ -64,11 +64,14 @@ gradeFlowChart.addEventListener("click",function(e){
 });
 
 function updateLesson(txt){
+	const mainArea = document.getElementById("lessonArea");
 	let layoutData = JSON.parse(txt);
 	for (const i in layoutData) {
 		const el = eval(layoutData[i]);
 		if(el[0] == 'title'){
-			console.log('title ',el[1]);
+			let titleEl = document.getElementById("titleTemp").content.cloneNode(true);
+			titleEl.querySelector(#titleEl).textContent = el[1];
+			mainArea.appendChild(titleEl);
 		}
 	}
 }
