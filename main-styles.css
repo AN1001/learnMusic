@@ -49,13 +49,13 @@ html, body{
 	outline-offset: 2px;
 }
 
-.noSelect {
+.noSelect{
 	-webkit-touch-callout: none; /* iOS Safari */
 	-webkit-user-select: none;
 	user-select: none; 
 }
 
-.front {
+.front{
 	display: block;
 	padding: 12px 42px;
 	user-select: none;
