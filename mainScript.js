@@ -64,12 +64,17 @@ gradeFlowChart.addEventListener("click",function(e){
 });
 
 function updateLesson(txt){
+	const embellishment = document.getElementById("embellishment").content.cloneNode(true);
 	const mainArea = document.getElementById("lessonArea");
 	let layoutData = JSON.parse(txt);
 	
 	while(mainArea.lastChild) {
 		mainArea.lastChild.remove();
 	}
+	
+	embellishment.childNodes[1].textContent = eval(layoutData[0])[0];
+	embellishment.childNodes[3].textContent = eval(layoutData[0])[1];
+	mainArea.appendChild(embellishment);
 	
 	for (const i in layoutData) {
 		const el = eval(layoutData[i]);
