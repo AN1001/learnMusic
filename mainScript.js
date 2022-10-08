@@ -55,7 +55,7 @@ gradeFlowChart.addEventListener("click",function(e){
 		var lessonData;
 		req.onreadystatechange = function() {
 			if (this.readyState == 4 && this.status == 200) {
-				lessonData = JSON.parse(req.responseText);
+				lessonData = req.responseText;
 				console.log(lessonData);
 			}
 		};
