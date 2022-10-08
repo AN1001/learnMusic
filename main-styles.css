@@ -214,6 +214,23 @@ html, body{
 	margin-top: 5px;
 }
 
+#eLogo{
+	background: url(TempusPerfectumLogo.png);
+	background-size: 80px;
+	margin: auto;
+	width: 85px;
+	height: 100px;
+}
+
+#eTitle{
+	font-size: 1.7em;
+	text-align: center;
+}
+
+#eDesc{
+	text-align: center;
+}
+
 /* Animations */
 @keyframes fadeIn {
   0% { opacity: 0; }
