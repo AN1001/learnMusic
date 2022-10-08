@@ -305,9 +305,6 @@ html {
 	#homebar{
 		display: none;
 	}
-	#gradeDetails{
-		display: none;
-	}
 }
 
 @media only screen and (max-width: 399px){
