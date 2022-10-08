@@ -77,6 +77,10 @@ function updateLesson(txt){
 			let titleEl = document.getElementById("titleTemp").content.cloneNode(true);
 			titleEl.firstChild.textContent = el[1];
 			mainArea.appendChild(titleEl);
+		} else if(el[0] == 'line'){
+			let lineEl = document.getElementById("lineTemp").content.cloneNode(true);
+			lineEl.firstChild.textContent = el[1];
+			mainArea.appendChild(lineEl);
 		}
 	}
 }
