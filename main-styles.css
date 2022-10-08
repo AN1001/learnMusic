@@ -305,8 +305,10 @@ html {
 	#mainArea{
 		width: 100%;
 	}
-	
 	#homebar{
+		display: none;
+	}
+	#gradeDetails{
 		display: none;
 	}
 }
