@@ -15,7 +15,7 @@ const gradeBtnsHolder = document.getElementById("gradeBtns");
 const mnTitle = document.getElementById("mnTitle");
 const mnSub = document.getElementById("mnSub");
 
-const temp = document.getElementById("lessonSelectUI");
+const temp = document.querySelectorAll(".lessonSelectUI")[0];
 buttons.addEventListener("click",function(e){
     target = e.target.parentElement;
     if(!isNaN(target.id) && !target.id==""){
@@ -74,16 +74,16 @@ function updateLesson(txt){
 	for (const i in layoutData) {
 		const el = eval(layoutData[i]);
 		if(el[0] == 'title'){
-			let titleEl = document.getElementById("titleTemp").content.cloneNode(true);
-			titleEl.firstChild.textContent = el[1];
+			let titleEl = document.querySelectorAll(".titleTemp")[0].content.cloneNode(true);
+			titleEl.childNodes[1].textContent = el[1];
 			mainArea.appendChild(titleEl);
 		} else if(el[0] == 'line'){
-			let lineEl = document.getElementById("lineTemp").content.cloneNode(true);
-			lineEl.firstChild.textContent = el[1];
+			let lineEl = document.querySelectorAll(".lineTemp")[0].content.cloneNode(true);
+			lineEl.childNodes[1].textContent = el[1];
 			mainArea.appendChild(lineEl);
 		} else if(el[0] == 'text'){
-			let textEl = document.getElementById("textTemp").content.cloneNode(true);
-			textEl.firstChild.textContent = el[1];
+			let textEl = document.querySelectorAll(".textTemp")[0].content.cloneNode(true);
+			textEl.childNodes[1].textContent = el[1];
 			mainArea.appendChild(textEl);
 		}
 	}
