@@ -123,6 +123,20 @@ html {
 	width: calc(100% - 425px);
 }
 
+#backBtn2{
+	position: absolute;
+	margin-top: -110px;
+	margin-left: 15px;
+	display: none;
+	width: 30px;
+	height: 30px;
+	background-position: center;
+	background: url("cross.png");
+	opacity: 15%;
+	border: none;
+	background-size: 30px;
+}
+
 #loadLessonPicture{
 	background: url("check-circle.png");
 	background-size: 100px;
