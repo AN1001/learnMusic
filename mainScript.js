@@ -74,6 +74,7 @@ function updateLesson(txt){
 	
 	const backBtn2 = document.createElement("div");
 	backBtn2.id = "backBtn2";
+	mainArea.appendChild(backBtn2);
 	backBtn2.addEventListener("click",function(){
 		buttons.style.display = "block";
 		mainArea.style.display = "none";
