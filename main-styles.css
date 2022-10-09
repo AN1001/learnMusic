@@ -112,6 +112,7 @@ html {
 #mainArea{
 	display: flex;
 	justify-content: center;
+	animation: fadeIn 0.5s;
 }
 
 #lessonArea{
@@ -121,6 +122,7 @@ html {
 	background: #202f36;
 	margin: 20px 0 20px 20px;
 	width: calc(100% - 425px);
+	animation: fadeIn 1.5s;
 }
 
 #backBtn2{
