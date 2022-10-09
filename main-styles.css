@@ -241,6 +241,7 @@ html {
 	opacity: 15%;
 	border: none;
 	background-size: 30px;
+	animation: fadeIn 2.5s;
 }
 
 #lineEl{
@@ -248,12 +249,14 @@ html {
 	margin-top: 10px;
 	padding: 10px;
 	color: #1db0f5;
+	animation: fadeIn 1.5s;
 }
 
 #imgCaption{
 	display: flex;
 	margin: 15px auto 15px auto;
 	width: 400px;
+	animation: fadeIn 1.5s;
 }
 
 #pictureEl{
@@ -263,6 +266,7 @@ html {
 	border: 2px solid var(--soft-blue);
 	border-radius: 1em;
 	background: #3f85a6;
+	animation: fadeIn 1.5s;
 }
 
 #infoEl{
@@ -275,16 +279,19 @@ html {
 	padding-left: 17px;
 	border-radius: 1em;
 	background: var(--soft-black);
+	animation: fadeIn 1.5s;
 }
 
 #titleEl{
 	font-size: 2em;
 	margin: 0 0 0 10px;
+	animation: fadeIn 1.5s;
 }
 
 #textEl{
 	margin: 10px;
 	margin-top: 5px;
+	animation: fadeIn 1.5s;
 }
 
 #eLogo{
@@ -293,15 +300,18 @@ html {
 	margin: auto;
 	width: 85px;
 	height: 100px;
+	animation: fadeIn 1.5s;
 }
 
 #eTitle{
 	font-size: 1.7em;
 	text-align: center;
+	animation: fadeIn 1.5s;
 }
 
 #eDesc{
 	text-align: center;
+	animation: fadeIn 1.5s;
 }
 
 @media only screen and (max-width: 850px){
