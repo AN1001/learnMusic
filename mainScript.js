@@ -78,7 +78,7 @@ function updateLesson(txt){
 	backBtn2.addEventListener("click",function(){
 		buttons.style.display = "block";
 		mainArea.style.display = "none";
-	}
+	})
 	
 	if(window.innerWidth <= 850){
 		buttons.style.display = "none";
