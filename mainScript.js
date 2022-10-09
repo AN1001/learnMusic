@@ -91,8 +91,8 @@ function updateLesson(txt){
 	
 	embellishment.childNodes[3].textContent = eval(layoutData[0])[0];
 	embellishment.childNodes[5].textContent = eval(layoutData[0])[1];
-	mainArea.appendChild(embellishment);
 	mainArea.appendChild(backBtn2);
+	mainArea.appendChild(embellishment);
 
 	for (const i in layoutData) {
 		const el = eval(layoutData[i]);
