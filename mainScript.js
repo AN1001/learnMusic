@@ -72,9 +72,17 @@ function updateLesson(txt){
 	const embellishment = document.getElementById("embellishment").content.cloneNode(true);
 	let layoutData = JSON.parse(txt);
 	
+	const backBtn2 = document.createElement("div");
+	backBtn2.id = "backBtn2";
+	backBtn2.addEventListener("click",function(){
+		buttons.style.display = "block";
+		mainArea.style.display = "none";
+	}
+	
 	if(window.innerWidth <= 850){
 		buttons.style.display = "none";
 		mainArea.style.display = "block";
+		backBtn2.style.display = "block";
 	}
 	
 	while(mainArea.lastChild) {
