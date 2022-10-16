@@ -152,8 +152,8 @@ function updateLesson(txt){
 					});
 			
 					const voice = new Voice({
-						num_beats: 4,
-						beat_value: 4
+						num_beats: notesRaw[0].split('/')[0],
+						beat_value: notesRaw[0].split('/')[1]
 					});
 			
 					voice.addTickables(notes);
