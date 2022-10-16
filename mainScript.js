@@ -116,7 +116,8 @@ function updateLesson(txt){
 			mainArea.appendChild(captionEl);
 		} else if(el[0] == 'sheetMusic'){
 			
-			let musicEl = document.createElement(div.musicContainer);
+			let musicEl = document.createElement("div");
+			musicEl.id = "musicContainer";
 			const {
 				Renderer,
 				Stave,
