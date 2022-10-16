@@ -114,56 +114,57 @@ function updateLesson(txt){
 			caption.childNodes[1].src = el[1][0];
 			caption.childNodes[3].textContent = el[1][1];
 			mainArea.appendChild(captionEl);
+		} else if(el[0] == 'sheetMusic'){
+			
+			let musicEl = document.createElement(div.musicContainer);
+			const {
+				Renderer,
+				Stave,
+				StaveNote,
+				Voice,
+				Formatter
+			  } = Vex.Flow;
+			
+			const notesRaw = el[1];
+			const renderer = new Renderer(musicEl, Renderer.Backends.SVG);
+			let cols = Math.ceil(notesRaw[1].length/2);
+			renderer.resize(420, (130*cols-10));
+			const context = renderer.getContext();
+			
+			notesRaw[1].forEach(function(bar,i) {
+				let col = Math.floor(i/2);
+				let row = i%2;
+			
+				const stave = new Stave(row*200+10, col*130, 200);
+				if(i==0){
+					stave.addClef('treble').addTimeSignature(notesRaw[0]);
+				}
+				stave.setContext(context).draw();
+			
+				if(!bar.length==0){
+					const notes = [];
+					notesRaw[1][i].forEach(function(note) {
+						notes.push(new StaveNote({
+							keys: note.slice(0,-1),
+							duration: note[note.length - 1]
+						}))
+					});
+			
+					const voice = new Voice({
+						num_beats: 4,
+						beat_value: 4
+					});
+			
+					voice.addTickables(notes);
+					if(i==0){
+						new Formatter().joinVoices([voice]).format([voice], 130);
+					} else {
+						new Formatter().joinVoices([voice]).format([voice], 180);
+					}
+					voice.draw(context, stave);
+				}
+			})
+			mainArea.appendChild(musicEl);
 		}
 	}
 }
-
-
-const {
-	Renderer,
-	Stave,
-	StaveNote,
-	Voice,
-	Formatter
-  } = Vex.Flow;
-
-const notesRaw = ['4/4',[ [['c/4','q'],['d/4','q'],['b/4','q'],['c/4', 'e/4', 'g/4','q']],[]]];
-const div = document.getElementById('musicContainer');
-const renderer = new Renderer(div, Renderer.Backends.SVG);
-let cols = Math.ceil(notesRaw[1].length/2);
-renderer.resize(420, (130*cols-10));
-const context = renderer.getContext();
-
-notesRaw[1].forEach(function(bar,i) {
-	let col = Math.floor(i/2);
-	let row = i%2;
-
-	const stave = new Stave(row*200+10, col*130, 200);
-	if(i==0){
-		stave.addClef('treble').addTimeSignature(notesRaw[0]);
-	}
-	stave.setContext(context).draw();
-
-	if(!bar.length==0){
-		const notes = [];
-		notesRaw[1][i].forEach(function(note) {
-			notes.push(new StaveNote({
-				keys: note.slice(0,-1),
-				duration: note[note.length - 1]
-			}))
-		});
-
-		const voice = new Voice({
-			num_beats: 4,
-			beat_value: 4
-		});
-
-		voice.addTickables(notes);
-		if(i==0){
-			new Formatter().joinVoices([voice]).format([voice], 130);
-		} else {
-			new Formatter().joinVoices([voice]).format([voice], 180);
-		}
-		voice.draw(context, stave);
-	}
-})
