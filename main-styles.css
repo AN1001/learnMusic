@@ -348,9 +348,12 @@ html {
 	}
 }
 
-@media only screen and (max-width: 399px){
+@media only screen and (max-width: 420px){
 	#imgCaption{
 		margin-left: calc(50% - 200px);
+	}
+	#musicContainer{
+		margin-left: calc(50% - 214px);
 	}
 	#gradeDetails{
 		border-radius: 0;
