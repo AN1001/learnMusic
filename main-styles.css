@@ -391,9 +391,10 @@ input[type=range]:focus {
 }
 
 #aCron{
-	width: 110px;
+	width: 130px;
+	text-align: center;
 	margin: auto;
-	margin-left: 5px;
+	margin-left: 5px; 
 }
 
 #aPlay{
