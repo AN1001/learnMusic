@@ -72,6 +72,19 @@
 			<div id="infoEl"></div>
 		</section>
 	</template>
+	<template class="audioPlayer">
+		<section id="audioPlayer">
+			<button id="aPlay" disabled><span id="aPlayIco" class="material-icons">
+				play_arrow
+			</span></button>
+			
+			<input id="aSeek" type="range" min="0" value="0" step="1" disabled/>
+
+			<div id="aCron">
+				<span id="aNow"></span> / <span id="aTime"></span>
+			</div>
+		</section>
+	</template>
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/vexflow@4.0.3/build/cjs/vexflow.js"></script>
