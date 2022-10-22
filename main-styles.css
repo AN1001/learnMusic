@@ -370,7 +370,7 @@ html {
 #audioPlayer input[type=range]::-webkit-slider-thumb {
 	width: 20px; height: 30px;
 	border: 3px solid var(--soft-blue);
-	background: var(--soft-white) url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.thenounproject.com%2Fpng%2F32008-200.png&f=1&nofb=1&ipt=8d7e160d3b6c9523f0be1d468ded1c76897a74fd89366a6023a0f332e7f2fce5&ipo=images);
+	background: var(--soft-white) url(trebleClef.png);
 	background-position-x: 27px;
 	background-size: 30px;
 }
@@ -378,7 +378,7 @@ html {
 #audioPlayer input[type=range]::-moz-range-thumb {
 	width: 20px; height: 30px;
 	border: 3px solid var(--soft-blue);
-	background: var(--soft-white) url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.thenounproject.com%2Fpng%2F32008-200.png&f=1&nofb=1&ipt=8d7e160d3b6c9523f0be1d468ded1c76897a74fd89366a6023a0f332e7f2fce5&ipo=images);
+	background: var(--soft-white) url(trebleClef.png);
 	background-position-x: 27px;
 	background-size: 30px;
 }
