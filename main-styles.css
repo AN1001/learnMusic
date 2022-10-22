@@ -431,7 +431,7 @@ input[type=range]:focus {
 	#homebar{
 		display: none;
 	}
-		#aCron{
+	#aCron{
 		width: 110px;
 		margin: auto;
 		margin-left: 5px;
