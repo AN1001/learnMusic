@@ -431,6 +431,13 @@ input[type=range]:focus {
 	#homebar{
 		display: none;
 	}
+		#aCron{
+		width: 110px;
+		margin: auto;
+		margin-left: 5px;
+		text-align: center;
+		font-size: 0.85em;
+  	}
 }
 
 @media only screen and (max-width: 420px){
