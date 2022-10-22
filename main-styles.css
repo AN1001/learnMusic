@@ -354,7 +354,7 @@ html {
 
 #audioPlayer input[type=range]::-webkit-slider-runnable-track {
 	background: url(musicBar.png);
-	background-size: 100px;
+	background-size: 92px;
 	height: 100%;
 	border: 1px solid var(--soft-blue);
 	border-left: 5px solid var(--soft-blue);
@@ -368,10 +368,13 @@ html {
 }
 
 #audioPlayer input[type=range]::-webkit-slider-thumb {
-	width: 20px; height: 30px;
-	border: 3px solid var(--soft-blue);
+    -webkit-appearance: none;
+    transform: scale(1.2); 
+	width: 25px; height: 35px;
+    border: 3px solid var(--soft-blue);
+    border-radius: 0.4em;
 	background: var(--soft-white) url(trebleClef.png);
-	background-position-x: 27px;
+	background-position-x: 26px;
 	background-size: 30px;
 }
 
@@ -381,6 +384,10 @@ html {
 	background: var(--soft-white) url(trebleClef.png);
 	background-position-x: 27px;
 	background-size: 30px;
+}
+
+input[type=range]:focus {
+    outline: none;
 }
 
 #aCron{
