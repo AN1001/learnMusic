@@ -176,6 +176,7 @@ function updateLesson(txt){
 			const currentTime = audioEl.childNodes[5].childNodes[1];
 			const totalTime = audioEl.childNodes[5].childNodes[3];
 			const durationBar = audioEl.childNodes[3];
+			const playIcon = mediaBtn.childNodes[0];
 
 			console.log(el[0][1]);
 
@@ -184,8 +185,8 @@ function updateLesson(txt){
 				else { audio.pause(); }
 			};
 			
-			audio.onplay = () => { aPlayIco.innerHTML = "pause"; };
-			audio.onpause = () => { aPlayIco.innerHTML = "play_arrow"; };
+			audio.onplay = () => { playIcon.innerHTML = "pause"; };
+			audio.onpause = () => { playIcon.innerHTML = "play_arrow"; };
 
 			var timeString = (secs) => {
 				let ss = Math.floor(secs),
