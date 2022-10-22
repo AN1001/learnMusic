@@ -448,9 +448,8 @@ input[type=range]:focus {
 		margin-left: calc(50% - 214px);
 	}
 	#gradeDetails{
-		margin: 5px;
+		margin-top: calc(98.5% - 365px);
 	}
-
 }
 
 /* Animations */
