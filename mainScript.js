@@ -223,10 +223,6 @@ function updateLesson(txt){
 				};
 			};
 
-			audio.onwaiting = () => {
-				mediaBtn.disabled = true;
-				durationBar.disabled = true;
-			};
 		}
 	}
 }
