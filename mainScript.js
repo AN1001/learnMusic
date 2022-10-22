@@ -171,7 +171,7 @@ function updateLesson(txt){
 			let audioEl = audioTemp.childNodes[1];
 			mainArea.appendChild(audioTemp)
 
-			const audio = new Audio("test.mp3");
+			const audio = new Audio("audioFiles/"+el[1]);
 			const mediaBtn = audioEl.childNodes[1];
 			const currentTime = audioEl.childNodes[5].childNodes[1];
 			const totalTime = audioEl.childNodes[5].childNodes[3];
