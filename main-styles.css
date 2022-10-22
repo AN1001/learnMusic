@@ -327,6 +327,77 @@ html {
 	transform: scale(95%);
 }
 
+#audioPlayer{
+	display: flex;
+	margin: 5px; 
+	padding: 5px;
+	border: 4px solid var(--soft-blue);
+	border-radius: 0.5em;
+
+	background: var(--soft-black);
+}
+
+#durationBar{
+	width: 100%;
+}
+
+#audioPlayer input[type="range"] {
+	box-sizing: border-box;
+	appearance: none;
+	border: none;
+	outline: none;
+	box-shadow: none;
+	padding: 0;
+	margin: 0;
+	background: 0;
+}
+
+#audioPlayer input[type=range]::-webkit-slider-runnable-track {
+	background: #626262;
+}
+#audioPlayer input[type=range]::-moz-range-track {
+	background: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fclipart-library.com%2Fimages%2F8iA6oRAaT.png&f=1&nofb=1&ipt=5c47e940cfe8c8cd190e04e6554fceeff1c74c3986246e838396168fd14a8062&ipo=images);
+	background-size: 100px;
+	height: 100%;
+	border: 1px solid var(--soft-blue);
+	border-left: 5px solid var(--soft-blue);
+}
+
+#audioPlayer input[type=range]::-webkit-slider-thumb {
+	width: 16px; height: 16px;
+	border-radius: 50%;
+	border: 0;
+	background: #fff;
+}
+
+#audioPlayer input[type=range]::-moz-range-thumb {
+  width: 30px; height: 30px;
+	border: 0;
+	background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.thenounproject.com%2Fpng%2F32008-200.png&f=1&nofb=1&ipt=8d7e160d3b6c9523f0be1d468ded1c76897a74fd89366a6023a0f332e7f2fce5&ipo=images);
+  background-size: 30px;
+}
+
+#aCron{
+	width: 130px;
+	margin: auto;
+	margin-left: 5px;
+}
+
+#aPlay{
+	background: none;
+	border: none;
+	margin: auto;
+	padding-left: 0;
+	height: 22px;
+}
+
+#aPlayIco{
+	color: var(--soft-blue);
+	font-size: 30px;
+	line-height: 20px;
+	margin: auto;
+}
+
 @media only screen and (max-width: 850px){
 	#lessonArea{
 		width: 100%;
