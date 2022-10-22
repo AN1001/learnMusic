@@ -218,6 +218,7 @@ function updateLesson(txt){
 				
 				audio.ontimeupdate = () => {
 					if (!userSelectingTime) { durationBar.value = Math.floor(audio.currentTime); }
+					currentTime.innerHTML = timeString(durationBar.value);
 				};
 			};
 
