@@ -166,6 +166,69 @@ function updateLesson(txt){
 				}
 			})
 			mainArea.appendChild(musicEl);
+		} else if(el[0] == 'audioPlayer'){
+			let audioTemp = document.querySelectorAll(".audioPlayer")[0].content.cloneNode(true);
+			let audioEl = audioTemp.childNodes[1];
+			mainArea.appendChild(audioTemp)
+
+			const audio = new Audio("test.mp3");
+			const mediaBtn = audioEl.childNodes[1];
+			const currentTime = audioEl.childNodes[5].childNodes[1];
+			const totalTime = audioEl.childNodes[5].childNodes[3];
+			const durationBar = audioEl.childNodes[3];
+
+			console.log(el[0][1]);
+
+			mediaBtn.onclick = () => {
+				if (audio.paused) { audio.play(); }
+				else { audio.pause(); }
+			};
+			
+			audio.onplay = () => { aPlayIco.innerHTML = "pause"; };
+			audio.onpause = () => { aPlayIco.innerHTML = "play_arrow"; };
+
+			var timeString = (secs) => {
+				let ss = Math.floor(secs),
+					hh = Math.floor(ss / 3600),
+					mm = Math.floor((ss - (hh * 3600)) / 60);
+				ss = ss - (hh * 3600) - (mm * 60);
+				
+				if (hh>0) { mm = mm<10 ? "0"+mm : mm; }
+				ss = ss<10 ? "0"+ss : ss;
+				return hh>0 ? `${hh}:${mm}:${ss}` : `${mm}:${ss}` ;
+			};
+
+			audio.onloadstart = () => {
+				currentTime.innerHTML = "Loading";
+				totalTime.innerHTML = "";
+			};
+			   
+			audio.onloadedmetadata = () => {
+				currentTime.innerHTML = timeString(0);
+				totalTime.innerHTML = timeString(audio.duration);
+				durationBar.max = Math.floor(audio.duration);
+
+				var userSelectingTime = false;
+				durationBar.oninput = () => { userSelectingTime = true; };
+				durationBar.onchange = () => {
+					audio.currentTime = durationBar.value;
+					if (!audio.paused) { audio.play(); }
+					userSelectingTime = false;
+				};
+				
+				audio.ontimeupdate = () => {
+					if (!userSelectingTime) { durationBar.value = Math.floor(audio.currentTime); }
+				};
+			};
+
+			audio.oncanplaythrough = () => {
+				mediaBtn.disabled = false;
+				durationBar.disabled = false;
+			};
+			audio.onwaiting = () => {
+				mediaBtn.disabled = true;
+				durationBar.disabled = true;
+			};
 		}
 	}
 }
