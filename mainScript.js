@@ -225,4 +225,7 @@ function updateLesson(txt){
 
 		}
 	}
+	
+	const lessonControlBtns = document.getElementById("lessonControlBtns").content.cloneNode(true);
+	mainArea.appendChild(lessonControlBtns);
 }
