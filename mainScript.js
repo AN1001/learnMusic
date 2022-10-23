@@ -102,7 +102,7 @@ function updateLesson(txt){
 			mainArea.appendChild(textEl);
 		} else if(el[0] == 'simpleImage'){
 			let simpleImage = document.querySelectorAll(".simpleImage")[0].content.cloneNode(true);
-			simpleImage.childNodes[1].src = el[1];
+			simpleImage.childNodes[1].childNodes[1].src = el[1];
 			mainArea.appendChild(simpleImage);
 		} else if(el[0] == 'iCaption'){
 			let captionEl = document.querySelectorAll(".iCaption")[0].content.cloneNode(true);
