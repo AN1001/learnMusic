@@ -100,7 +100,11 @@ function updateLesson(txt){
 			let textEl = document.querySelectorAll(".textTemp")[0].content.cloneNode(true);
 			textEl.childNodes[1].textContent = el[1];
 			mainArea.appendChild(textEl);
-		} else if(el[0] == 'icaption'){
+		} else if(el[0] == 'simpleImage'){
+			let simpleImage = document.querySelectorAll(".simpleImage")[0].content.cloneNode(true);
+			simpleImage.childNodes[1].src = el[1];
+			mainArea.appendChild(simpleImage);
+		} else if(el[0] == 'iCaption'){
 			let captionEl = document.querySelectorAll(".iCaption")[0].content.cloneNode(true);
 			let caption = captionEl.childNodes[1];
 			caption.childNodes[1].src = el[1][0];
