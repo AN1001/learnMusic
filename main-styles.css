@@ -34,7 +34,7 @@ html {
 }
 
 #logo{
-	background: url(TempusLogo.png);
+	background: url("images/TempusLogo.png");
 	background-size: 50px; 
 	background-position: center 115px;
 	border-radius: 0.5em;
@@ -133,14 +133,14 @@ html {
 	width: 30px;
 	height: 30px;
 	background-position: center;
-	background: url("cross.png");
+	background: url("images/cross.png");
 	opacity: 15%;
 	border: none;
 	background-size: 30px;
 }
 
 #loadLessonPicture{
-	background: url("check-circle.png");
+	background: url("images/check-circle.png");
 	background-size: 100px;
 	margin: auto;
 	margin-top: 210px;
@@ -184,7 +184,7 @@ html {
 #pianoFooter{
 	margin-top: auto;
 	height: 60px;
-	background: url(pianoFooter1.png);
+	background: url("images/pianoFooter1.png");
 	opacity: 10%;
 	background-size: 200px;
 	background-position: center 115px;
@@ -237,7 +237,7 @@ html {
 	width: 30px;
 	height: 30px;
 	background-position: center;
-	background: url("cross.png");
+	background: url("images/cross.png");
 	opacity: 15%;
 	border: none;
 	background-size: 30px;
@@ -295,7 +295,7 @@ html {
 }
 
 #eLogo{
-	background: url(TempusLogo.png);
+	background: url("images/TempusLogo.png");
 	background-size: 80px;
 	margin: auto;
 	width: 85px;
@@ -353,14 +353,14 @@ html {
 }
 
 #audioPlayer input[type=range]::-webkit-slider-runnable-track {
-	background: url(musicBar.png);
+	background: url("images/musicBar.png");
 	background-size: 92px;
 	height: 100%;
 	border: 1px solid var(--soft-blue);
 	border-left: 5px solid var(--soft-blue);
 }
 #audioPlayer input[type=range]::-moz-range-track {
-	background: url(musicBar.png);
+	background: url("images/musicBar.png");
 	background-size: 64px;
 	height: 100%;
 	border: 1px solid var(--soft-blue);
@@ -373,7 +373,7 @@ html {
 	width: 25px; height: 35px;
     border: 3px solid var(--soft-blue);
     border-radius: 0.4em;
-	background: var(--soft-white) url(trebleClef.png);
+	background: var(--soft-white) url("images/trebleClef.png");
 	background-position-x: 26px;
 	background-size: 30px;
 }
@@ -381,7 +381,7 @@ html {
 #audioPlayer input[type=range]::-moz-range-thumb {
 	width: 20px; height: 30px;
 	border: 3px solid var(--soft-blue);
-	background: var(--soft-white) url(trebleClef.png);
+	background: var(--soft-white) url("images/trebleClef.png");
 	background-position-x: 27px;
 	background-size: 30px;
 }
