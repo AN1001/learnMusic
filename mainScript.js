@@ -1,3 +1,4 @@
+var code;
 var xhttp = new XMLHttpRequest();
 var lessonInfo;
 xhttp.onreadystatechange = function() {
@@ -54,17 +55,8 @@ gradeFlowChart.addEventListener("click",function(e){
 		if(target.parentElement.classList.contains("lessonSelectData")){
 			target = target.parentElement;
 		}
-		let code = target.childNodes[1].textContent.replace(":","");
-		let req = new XMLHttpRequest();
-		let lessonData;
-		req.onreadystatechange = function() {
-			if (this.readyState == 4 && this.status == 200) {
-				lessonData = req.responseText;
-				updateLesson(lessonData);
-			}
-		};
-		req.open("GET", "rawLessonData/"+code+".json", true);
-		req.send();
+		code = target.childNodes[1].textContent.replace(":","");
+		updateLessonWithRawData(code);
 	}
 });
 
@@ -110,7 +102,7 @@ function updateLesson(txt){
 			mainArea.appendChild(textEl);
 		} else if(el[0] == 'icaption'){
 			let captionEl = document.querySelectorAll(".iCaption")[0].content.cloneNode(true);
-			let caption = captionEl.childNodes[1]
+			let caption = captionEl.childNodes[1];
 			caption.childNodes[1].src = el[1][0];
 			caption.childNodes[3].textContent = el[1][1];
 			mainArea.appendChild(captionEl);
@@ -169,7 +161,7 @@ function updateLesson(txt){
 		} else if(el[0] == 'audioPlayer'){
 			let audioTemp = document.querySelectorAll(".audioPlayer")[0].content.cloneNode(true);
 			let audioEl = audioTemp.childNodes[1];
-			mainArea.appendChild(audioTemp)
+			mainArea.appendChild(audioTemp);
 
 			const audio = new Audio("audioFiles/"+el[1]);
 			const mediaBtn = audioEl.childNodes[1];
@@ -177,8 +169,6 @@ function updateLesson(txt){
 			const totalTime = audioEl.childNodes[5].childNodes[3];
 			const durationBar = audioEl.childNodes[3];
 			const playIcon = mediaBtn.childNodes[0];
-
-			console.log(el[0][1]);
 
 			mediaBtn.onclick = () => {
 				if (audio.paused) { audio.play(); }
@@ -228,4 +218,39 @@ function updateLesson(txt){
 	
 	const lessonControlBtns = document.getElementById("lessonControlBtns").content.cloneNode(true);
 	mainArea.appendChild(lessonControlBtns);
+	
+	let LBB = document.getElementById("lessonBackBtn");
+	LBB.addEventListener("click",function(){
+		code = code.split("L")
+		code[1]--;
+		code[1] = "L"+code[1]
+		code = code.join("")
+		console.log(code)
+		updateLessonWithRawData(code);
+	})
+	
+	let LNB = document.getElementById("lessonNextBtn");
+	LNB.addEventListener("click",function(){
+	  	console.log("clicked");
+		code = code.split("L")
+		code[1]++;
+		code[1] = "L"+code[1]
+		code = code.join("")
+		console.log(code)
+		updateLessonWithRawData(code);
+	})
+	
+}
+
+function updateLessonWithRawData(code){
+	let req = new XMLHttpRequest();
+	let lessonData;
+	req.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+			lessonData = req.responseText;
+			updateLesson(lessonData);
+		}
+	};
+	req.open("GET", "rawLessonData/"+code+".json", true);
+	req.send();
 }
