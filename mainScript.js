@@ -4,7 +4,6 @@ var lessonInfo;
 xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         lessonInfo = JSON.parse(xhttp.responseText);
-        console.log(lessonInfo);
     }
 };
 xhttp.open("GET", "LESSONINFO.json", true);
@@ -229,7 +228,6 @@ function updateLesson(txt){
 		code[1]--;
 		code[1] = "L"+code[1]
 		code = code.join("")
-		console.log(code)
 		updateLessonWithRawData(code);
 	})
 	
@@ -240,7 +238,6 @@ function updateLesson(txt){
 		code[1]++;
 		code[1] = "L"+code[1]
 		code = code.join("")
-		console.log(code)
 		updateLessonWithRawData(code);
 	})
 	
