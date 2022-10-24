@@ -11,7 +11,7 @@
   "9":"['text','In every musical piece there is always a clef in the beginning of the stave. It is meant to be a placeholder to tell us which note is which.']",
   "10":"['iCaption',['images/L1-114.webp','The most common one is the treble clef which tells us where we should write the note G']]",
   "11":"['text','The treble clef is shaped like a G and identifies the note G where it curves near the center. It is on this line that we write the note G.']",
-  "12":"['simpleImage','images/L1-144.png']",
+  "12":"['simpleImage','images/L1-114.png']",
   "13":"['text','When we have found the note G we can work out all of the other note positions as they are all relative to G. For example the notes on the lines can be remembered with the acronym Every Good Boy Deserves Football for E,G,B,D,F (E is furthest left and lowest down on example then G next then B etc...)']",
   "14":"['sheetMusic',['5/4',[ [['e/4','q'],['g/4','q'],['b/4','q'],['d/5','q'],['f/5','q']],[]]]]",
   "15":"['text','Similarly we can use the acronym D-FACE-G to work out the other notes that are in spaces (D is furthest left and lowest down on example then F next then A etc...)']",
