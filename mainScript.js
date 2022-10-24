@@ -111,6 +111,7 @@ function updateLesson(txt){
 			mainArea.appendChild(captionEl);
 		} else if(el[0] == 'sheetMusic'){
 			
+			//Creates a fresh sheet of music with no notes on it
 			let musicEl = document.createElement("div");
 			musicEl.id = "musicContainer";
 			const {
@@ -121,12 +122,17 @@ function updateLesson(txt){
 				Formatter
 			  } = Vex.Flow;
 			
+			//The code below sizes it so it fits the screen well as well
+			//as wrapping the music downwards if it overflowed rather 
+			//than across and off the screen
 			const notesRaw = el[1];
 			const renderer = new Renderer(musicEl, Renderer.Backends.SVG);
 			let cols = Math.ceil(notesRaw[1].length/2);
 			renderer.resize(420, (130*cols-10));
 			const context = renderer.getContext();
 			
+			//The code below loops through every note that has to be placed
+			//and places it on the black sheet of music
 			notesRaw[1].forEach(function(bar,i) {
 				let col = Math.floor(i/2);
 				let row = i%2;
