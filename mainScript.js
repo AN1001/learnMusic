@@ -1,3 +1,7 @@
+//**************************************
+//THIS CODE WAS CREATED BY ARNAV NAGPURE
+//**************************************
+//ADDITIONAL DEPENDANCIES INCLUDE VEX FLOW
 var code;
 var xhttp = new XMLHttpRequest();
 var lessonInfo;
