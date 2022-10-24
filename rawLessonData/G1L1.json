@@ -9,14 +9,14 @@
   "7":"['line','UNIT 1']",
   "8":"['title','The Treble Clef']",
   "9":"['text','In every musical piece there is always a clef in the beginning of the stave. It is meant to be a placeholder to tell us which note is which.']",
-  "10":"['iCaption',['https://rlv.zcache.com/treble_clef_g_clef_musical_symbol_photo_print-r2b863fc87805423797d87f4e98c6e0ec_fk99_8byvr_736.webp','The most common one is the treble clef which tells us where we should write the note G']]",
+  "10":"['iCaption',['images/L1-114.webp','The most common one is the treble clef which tells us where we should write the note G']]",
   "11":"['text','The treble clef is shaped like a G and identifies the note G where it curves near the center. It is on this line that we write the note G.']",
-  "12":"['simpleImage','https://www.skoove.com/blog/wp-content/uploads/2021/07/image2.png']",
+  "12":"['simpleImage','images/L1-144.png']",
   "13":"['text','When we have found the note G we can work out all of the other note positions as they are all relative to G. For example the notes on the lines can be remembered with the acronym Every Good Boy Deserves Football for E,G,B,D,F (E is furthest left and lowest down on example then G next then B etc...)']",
   "14":"['sheetMusic',['5/4',[ [['e/4','q'],['g/4','q'],['b/4','q'],['d/5','q'],['f/5','q']],[]]]]",
   "15":"['text','Similarly we can use the acronym D-FACE-G to work out the other notes that are in spaces (D is furthest left and lowest down on example then F next then A etc...)']",
   "16":"['sheetMusic',['6/4',[ [],[['d/4','q'],['f/4','q'],['a/4','q'],['c/5','q'],['e/5','q'],['g/5','q']]]]]",
-  "17":"['iCaption',['https://musictheoryforbeginners.files.wordpress.com/2018/10/middle-c-treble.png?w=1024','The note before the first D in this series is called middle C and is typically the C closest to the logo of the piano']]",
-  "18":"['simpleImage','https://joannejolee.com/wordpress/wp-content/uploads/2018/09/play-the-piano-middle-C-yamaha__opt.jpg']",
+  "17":"['iCaption',['images/L1-938.png','The note before the first D in this series is called middle C and is typically the C closest to the logo of the piano']]",
+  "18":"['simpleImage','images/L1-881.jpeg']",
   "19":"['text','Middle C is written underneath the stave and has an imaginary line that pierces it - similar to an extension of the stave. This line is called a ledger line.']"
 }
