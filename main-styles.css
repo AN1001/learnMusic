@@ -488,7 +488,7 @@ input[type=range]:focus {
 @media only screen and (max-width: 850px){
 	#lessonArea{
 		width: 100%;
-		margin: 0;
+		margin-top: -20px;
 		border-radius: 0;
 		transform: scale(100%);
 	}
