@@ -472,7 +472,7 @@ input[type=range]:focus {
 	background-size: 40px;
 }
 
-.simpleImage{
+.simpleImageEl{
 	display: flex;
 	justify-content: center;
 	margin: 10px 0 10px 0;
@@ -489,7 +489,6 @@ input[type=range]:focus {
 	#lessonArea{
 		width: 100%;
 		margin: 0;
-		margin-top: -20px;
 		border-radius: 0;
 		transform: scale(100%);
 	}
