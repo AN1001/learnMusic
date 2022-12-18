@@ -59,7 +59,11 @@ gradeFlowChart.addEventListener("click",function(e){
 			target = target.parentElement;
 		}
 		code = target.childNodes[1].textContent.replace(":","");
-		updateLessonWithRawData(code);
+		if(['G1L0','G1L1','G1L2'].includes(code)){
+			updateLessonWithRawData(code);
+		} else {
+			updateLessonWithRawData("FILENOTFOUND");
+		}
 	}
 });
 
