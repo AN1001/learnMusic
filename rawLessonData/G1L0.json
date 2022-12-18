@@ -1,13 +1,14 @@
 {
-  "0":"['Intro to Grade 1','Learn time names, frequencies for this unit']",
+  "0":"['Intro to Grade 1','Learn how this website works!']",
   "1":"['line','UNIT 1']",
-  "2":"['title','Note Names']",
-  "3":"['text','Lorem ipsum dolor sit amet Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi']",
-  "4":"['iCaption',['images/crochetNote.png','consequatu dut perspiciatis, accusantium doloremque laudantium, totam rem aperiam eaque ipsa']]",
-  "5":"['iCaption',['images/minimNote.png','Sed ut perspiciatis, accusantium doloremque laudantium, totam rem aperiam eaque ipsa']]",
+  "2":"['title','Notes']",
+  "3":"['text','Throughout this chapter you will learn different note name types and how they work']",
+  "4":"['iCaption',['images/crochetNote.png','For example the crochet, sometimes called a quarter note in American naming systems']]",
+  "5":"['iCaption',['images/minimNote.png','Or Maybe the minim sometimes called the half note']]",
   "6":"['line','UNIT 1']",
-  "7":"['title','Note Shapes']",
-  "8":"['text','Lorem ipsum dolor sit amet Sed ut perspiciatism accusantium, quae ab illo inventore veritatis et quasi']",
+  "7":"['title','How notes are written']",
+  "8":"['text','Throughout the plethora of things you will learn, learning how no test are written will most likely be the most important for example:']",
   "9":"['sheetMusic',['4/4',[ [['c/4','q'],['d/4','q'],['b/4','q'],['c/4', 'e/4', 'g/4','q']],[]]]]",
-  "10":"['audioPlayer','test.mp3']"
+  "10":"['text','You will also be able to listen to the notes that are written in these lessons using my revolutionary exclusive audio player- p.s. I have included a tune instead, it is more interesting!']",
+  "11":"['audioPlayer','test.mp3']"
 }
