@@ -5,7 +5,8 @@
     "G1:L2":"The bass clef",
     "G1:L3":"Accidentals",
     "G1:L4":"Tied Notes",
-    "G1:L5":"Tones + semitones"
+    "G1:L5":"Tones + semitones",
+    "G1:L6":"Major scale"
   },
   "2":{
     "G2:L0":"Intro to Grade 2"
