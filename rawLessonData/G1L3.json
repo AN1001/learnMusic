@@ -23,7 +23,7 @@
 	"21": "['simpleImage','https://www.mymusictheory.com/images/stories/grade1/3/3_accidentals_clip_image010.jpg']",
 	"22": "['text','Find the notes F and G. The black note in between F and G can be called F sharp (F#) or G flat (Gb).']",
 	"23": "['text','Here are all the notes between the two Cs. Click on the Play button to hear what they sound like:']",
-	"24": "['audioPlayer','https://www.mymusictheory.com/images/audio/g1/chromatic-scale.mp3']",
+	"24": "['audioPlayer','audioFiles/chromatic-scale.mp3']",
 	"25": "['line','Accidentals']",
 	"26": "['title','Naturals']",
 	"27": "['text','The third type of accidental we are going to look at is called the natural.']",
