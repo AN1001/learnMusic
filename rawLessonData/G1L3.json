@@ -14,8 +14,8 @@
 	"12": "['title','Sharps and Flats']",
 	"13": "['text','So, we have 12 different notes, but we only use 7 letters of the alphabet. We use the words “sharp” (=higher) and “flat” (=lower) with a letter name, to cover all those “in-between” notes. Sharps and flats are two kinds of \"accidentals\".']",
 	"14": "['text','We can use symbols for accidentals, instead of the words sharp and flat.']",
-	"15": "['iCaption',['https://www.mymusictheory.com/images/stories/grade1/3/3_accidentals_clip_image004.gif','Sharp symbol']]",
-	"16": "['iCaption',['https://www.mymusictheory.com/images/stories/grade1/3/3_accidentals_clip_image006.gif','Flat symbol']]",
+	"15": "['iCaption',['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6DSe3-bh4IDcucXuVVqSTC7-cp0ogjaoEIw&usqp=CAU','Sharp symbol']]",
+	"16": "['iCaption',['https://images.pond5.com/flat-music-sign-3d-091499412_iconl.jpeg','Flat symbol']]",
 	"17": "['text','Find the notes C and D on this keyboard:']",
 	"18": "['simpleImage','https://www.mymusictheory.com/images/stories/grade1/3/3_accidentals_clip_image008.jpg']",
 	"19": "['text','They are both white notes (but we have coloured the C in yellow to help you find it!). In between them, you will see a black note.']",
@@ -28,6 +28,6 @@
 	"26": "['line','Accidentals']",
 	"27": "['title','Naturals']",
 	"28": "['text','The third type of accidental we are going to look at is called the natural.']",
-	"29": "['iCaption',['https://www.mymusictheory.com/images/stories/grade1/3/3_accidentals_clip_image012.gif','We use the word natural to say that a note is neither sharp nor flat.']]",
+	"29": "['iCaption',['https://i0.wp.com/i.pinimg.com/originals/e0/fe/c3/e0fec32f1e7aba007505351f57401cee.jpg?resize=180%2C180&ssl=1','We use the word natural to say that a note is neither sharp nor flat.']]",
 	"30": "['text','This is very useful, because sometimes when a note has already been altered by an accidental (flat or sharp), we need to put a natural sign in to tell the player that it is not flat or sharp any more. Flats, sharps and naturals make up the main accidentals, and they are the only accidentals you need to know for grade one music theory.']"
 }
