@@ -7,7 +7,12 @@
     "G1:L4":"Tied Notes",
     "G1:L5":"Tones + semitones",
     "G1:L6":"Major scale",
-    "G1:L7":"Key signatures"
+    "G1:L7":"Key signatures",
+    "G1:L8":"Intervals",
+    "G1:L9":"Tonic triads",
+    "G1:L10":"Key signatures",
+    "G1:L11":"Key signatures",
+    "G1:L12":"Foregin terms",
   },
   "2":{
     "G2:L0":"Intro to Grade 2"
