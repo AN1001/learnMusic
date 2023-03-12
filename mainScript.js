@@ -2,7 +2,7 @@
 //THIS CODE WAS CREATED BY ARNAV NAGPURE
 //**************************************
 //ADDITIONAL DEPENDANCIES INCLUDE VEX FLOW
-const LESSONS = ['G1L0','G1L1','G1L2','G1L3']
+const LESSONS = ['G1L0','G1L1','G1L2','G1L3','G1L4']
 var code;
 var xhttp = new XMLHttpRequest();
 var lessonInfo;
