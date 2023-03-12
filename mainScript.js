@@ -2,6 +2,7 @@
 //THIS CODE WAS CREATED BY ARNAV NAGPURE
 //**************************************
 //ADDITIONAL DEPENDANCIES INCLUDE VEX FLOW
+const LESSONS = ['G1L0','G1L1','G1L2','G1L3']
 var code;
 var xhttp = new XMLHttpRequest();
 var lessonInfo;
@@ -59,7 +60,7 @@ gradeFlowChart.addEventListener("click",function(e){
 			target = target.parentElement;
 		}
 		code = target.childNodes[1].textContent.replace(":","");
-		if(['G1L0','G1L1','G1L2'].includes(code)){
+		if(LESSONS.includes(code)){
 			updateLessonWithRawData(code);
 		} else {
 			updateLessonWithRawData("FILENOTFOUND");
