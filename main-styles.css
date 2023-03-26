@@ -480,7 +480,7 @@ input[type=range]:focus {
 }
 
 .rawImage{
-	width: 400px;
+	max-width: 400px;
 	border: 4px solid var(--soft-blue);
 	border-radius: 0.8em;
 }
